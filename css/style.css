@@ -30,10 +30,17 @@ a {
 }
 
 .house {
+    Width: 112px;
+    Height: 19px;
+    Top: 16px;
     color: #0065FC;
 }
 
 .activity {
+    Width: 63px;
+    Height: 19px;
+    Top: 16px;
+    Left: 181px;
     color: black;
 }
 
@@ -76,6 +83,13 @@ a {
     float: left; /* position a gauche*/
     padding: 10px;
     margin-bottom: 0; /* car sinon le padding s'ajoute au marging */
+}
+
+.logo {
+    Width: 61.09px;
+    Height: 19px;
+    Top: 30px;
+    Left: 50px;
 }
 
 .header nav ul {
