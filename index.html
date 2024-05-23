@@ -16,8 +16,33 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <header class="header">
+                <nav> <!-- indicateur pour moteur de recherche  j'y met tous les liens-->
+                    <h1>
+                        <img class="logo" src="./images/logo/Booki.png" alt="Booki">
+                    </h1>  <!--barre de navigation pour pouvoir naviguer sur le site grace a ma liste-->
+                    <ul>
+                        <li><a class="card-title house" href="#">Hébergements</a></li>
+                        <li><a class="card-title activity" href="#">Activités</a></li>
+                    </ul>
+                </nav>
+        </header>
         <main>
+            <section class="info-group">
+                <div class="headline">
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="card-title">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div class="search-bar">
+                    <div class="icon">
+                        <!-- Icône de localisation de Font Awesome -->
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <input type="text" class="search-input" placeholder="Marseille, France">
+                    <button class="search-button">Rechercher</button>
+                </div>
+            </section>
             <section class="hebergements-and-populaires">
                 <section class="hebergements">
 
