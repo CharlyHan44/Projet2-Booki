@@ -25,6 +25,25 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none; /* pour ne pas souligner le text */
+}
+
+.house {
+    Width: 112px;
+    Height: 19px;
+    Top: 16px;
+    color: #0065FC;
+}
+
+.activity {
+    Width: 63px;
+    Height: 19px;
+    Top: 16px;
+    Left: 181px;
+    color: black;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -52,6 +71,38 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+/****** Header ********/
+
+.header {
+    overflow: auto;
+    line-height: 50px;
+}
+
+.header nav h1{
+    float: left; /* position a gauche*/
+    padding: 10px;
+    margin-bottom: 0; /* car sinon le padding s'ajoute au marging */
+}
+
+.logo {
+    Width: 61.09px;
+    Height: 19px;
+    Top: 30px;
+    Left: 50px;
+}
+
+.header nav ul {
+    float: right; /* positionnemt de ma liste a droite*/
+    list-style: none; /* enleve les petits ronds par defaut devant mes elements ul*/
+}
+
+.header nav ul li {
+    float: left; /* display en float car li(ste) est en bloc auto*/
+    padding: 20px; /* le padding ne sapplique pas car les link sont en display inline par defaut*/
+    display: inline-block;  /*les 'a' les link je les display a bloc car sinon ils sont colles tout en haut*/
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
