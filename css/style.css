@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -15,33 +17,20 @@
 
 body {
     display: flex;
-    justify-content: center;
 }
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
+    width-fixed: 1440px;
+    height-hug: 1889.02px;
+    top: 188px;
+    left: 1599px;
     padding: 0 50px;
     box-sizing: border-box;
+    gap: 30px;
 }
 
 a {
     text-decoration: none; /* pour ne pas souligner le text */
-}
-
-.house {
-    Width: 112px;
-    Height: 19px;
-    Top: 16px;
-    color: #0065FC;
-}
-
-.activity {
-    Width: 63px;
-    Height: 19px;
-    Top: 16px;
-    Left: 181px;
-    color: black;
 }
 
 .section-title {
@@ -75,36 +64,326 @@ a {
 /****** Header ********/
 
 .header {
-    overflow: auto;
-    line-height: 50px;
+    width: 1440px;
+    height: 79px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header nav h1{
-    float: left; /* position a gauche*/
-    padding: 10px;
-    margin-bottom: 0; /* car sinon le padding s'ajoute au marging */
+    width-Hug: 161.09px;
+    height-Hug: 79px;
+    padding: 20px 0px;
+    gap: 10px;
+    display: flex;
+    float: left;
 }
 
-.logo {
-    Width: 61.09px;
-    Height: 19px;
-    Top: 30px;
-    Left: 50px;
+.booki {
+    width: 61.09px;
+    height: 19px;
+    top: 30px;
+    left: 50px;
+    display: flex;
 }
 
 .header nav ul {
+    display: flex;
     float: right; /* positionnemt de ma liste a droite*/
     list-style: none; /* enleve les petits ronds par defaut devant mes elements ul*/
+    text-align: right;
 }
 
 .header nav ul li {
-    float: left; /* display en float car li(ste) est en bloc auto*/
+    float: right;  /*display en float car li(ste) est en bloc auto*/
     padding: 20px; /* le padding ne sapplique pas car les link sont en display inline par defaut*/
-    display: inline-block;  /*les 'a' les link je les display a bloc car sinon ils sont colles tout en haut*/
+    display: inline;  /*les 'a' les link je les display a bloc car sinon ils sont colles tout en haut*/
+    text-align: right;
 }
 
+.house {
+    width: 112px;
+    height: 19px;
+    Top: 16px;
+    color: #0065FC;
+}
+
+.activity {
+    Width: 63px;
+    Height: 19px;
+    Top: 16px;
+    Left: 181px;
+    color: black;
+}
+
+/****** Info Group ***********/
+
+.info-group {
+    width: 1340px;
+    height: 281px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+/******* Headline **********/
+
+.headline {
+    width: 1340px;
+    Height: 53px;
+    Gap: 8px;
+}
+
+/****** Search-bar ************/
+
+.search-bar {
+    width-hug: 377px;
+    height-hug: 49px;
+    Gap: 24px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px rgba(242, 242, 242, 1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.group15 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0 0 15px;
+    border: 1px;
+    background-color: #F2F2F2;
+}
+
+.fa-map-marker-alt {
+    width: 14px;
+    height: 18px;
+    top: 15px;
+    left: 18px;
+    color: #000000;
+}
+
+.marseille {
+    width: 147px;
+    height: 21px;
+    font-size: 18px;
+    line-height: 21.13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.search-button {
+    background-color: #0065FC;
+    color: white;
+    padding: 15px 16px 15px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    Gap: 10px;
+    width: 132px;
+    height: 49px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/******* Filter-Bar ***********************/
+
+.filter-bar{
+    width: 758px;
+    height: 50px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filtres {
+    width: 54px;
+    Height: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+    color: #000000;
+    align-items: center;
+}
+
+.filter1 {
+    width-hug: 173px;
+    height-fixed: 50px;
+    border-radius: 25px;
+    border: 2px solid rgba(217, 217, 217, 1);
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    display: inline;
+    background-color: white;
+}
+
+.filter2 {
+    width-hug: 134px;
+    height-fixed: 50px;
+    border-radius: 25px;
+    border: 2px solid rgba(217, 217, 217, 1);
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    display: inline;
+    background-color: white;
+}
+
+.filter3 {
+    width-hug: 170px;
+    height-fixed: 50px;
+    border-radius: 25px;
+    border: 2px solid rgba(217, 217, 217, 1);
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    display: inline;
+    background-color: white;
+}
+
+.filter4 {
+    width-hug: 167px;
+    height-fixed: 50px;
+    border-radius: 25px;
+    border: 2px solid rgba(217, 217, 217, 1);
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    display: inline;
+    background-color: white;
+}
+
+. icones {
+    width: 22px;
+    height: 22px;
+    display: flex;
+}
+
+.fa-money-bill-wave {
+    width: 22px;
+    height: 16.26px;
+    top: 2.87px;
+    color: #0065FC;
+    display: inline-flex;
+}
+
+.fa-person {
+    width: 13.44px;
+    height: 22px;
+    left: 4px;
+    color: #0065FC;
+    display: inline-flex;
+}
+
+.fa-heart {
+    width: 22px;
+    height: 18.33px;
+    top: 2px;
+    color: #0065FC;
+    display: inline-flex;
+}
+
+.fa-fire {
+    width: 18px;
+    height: 20.08px;
+    top: 1px;
+    left: 2.5px;
+    color: #0065FC;
+    display: inline-flex;
+}
+
+.classement {
+    width: 97px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19.96px;
+    color: #000000;
+}
+
+.filter-button {
+    width-hug: 173px;
+    height-fixed: 50px;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
+}
+
+/******** Info-bar ********************/
+
+.info-bar{
+    width-fill: 1340px;
+    height-fixed: 24px;
+    Gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border: 1px;
+}
+
+.fa-solid.fa-info{
+    width: 4px;
+    height: 10px;
+    top: 7px;
+    left: 10px;
+    color: rgba(0, 101, 252, 1);
+    text-align: inherit;
+    font-size: 10px;
+    position: absolute;
+}
+
+.fa-regular.fa-circle{
+    width: 24px;
+    height: 24px;
+    border: 1px;
+    font-size: 20px;
+    color: rgba(217, 217, 217, 1);
+    text-align: inherit;
+    position: absolute;
+}
+
+/**.p:before{
+    content: "\0024D8";
+}**/
+
+.info-bar p{
+    width: 1306px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: rgba(0, 0, 0, 1);
+    display: inline-flex;
+}
+.group{
+    display: flex;
+}
+
+.arrow{
+    width: 26.9px;
+    height: 27px;
+    top: 208px;
+    left: 745px;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+}
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -118,8 +397,89 @@ a {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
+}
+
+.card-hebergement-col1{
+    display: flex;
+    flex-direction: row;
+    width-fill: 811px;
+    height-hug: 207.25px;
+    gap: 30px;
+}
+
+.card-hebergement-col2{
+    display: flex;
+    flex-direction: row;
+    width-fill: 811px;
+    height-hug: 207.25px;
+    gap: 30px;
+}
+
+.populaires-cards .card-hebergement{
+    width-Fill: 250.33px;
+    height-Hug: 207.25px;
+    padding: 0 0 15px 0;
+    gap: 4px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 33px;
+}
+
+/**
+.populaires-cards .heber-card{
+    width-fill: 250.33px;
+    height-hug: 207.25px;
+    padding: 0 0 15px 0;
+    gap: 4px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 33px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.populaires-cards .hebergement-content {
+    width: 63%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}**/
+
+.populaires-cards .card-hebergement img{
+    width: 250.33px;
+    height: 124px;
+    gap: 0;
+    border-radius: 20px 20px 0 0;
+    border: 5px solid rgba(255, 255, 255, 1);
+}
+
+.btn-affichPlus{
+    width: 811px;
+    height: 21px;
+    margin-top: 25px;
+}
+
+.affichPlus{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.btn-cards{
+    color: rgba(0, 0, 0, 1);
+}
+
+.heber-content{
+    width-fill: 250.33px;
+    height-hug: 64.25px;
+    padding: 0 15px 0 15px;
+    gap: 8px;
 }
 
 /****** Populaires ***********/
@@ -166,6 +526,45 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 7px;
 }
+
+/******** Activités à Marseille *************/
+/****/
+.activités {
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.activités-content{
+    padding: 30px 0 0 0;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+    margin-bottom: 4px;
+}
+
+.activités-cards{
+    gap: 30px;
+}
+
+.card-activités{
+    float: left;
+    margin: 1rem;
+}
+
+.card-activités img{
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activités-cards .card-content{
+    padding: 20px 19px 20px 19px;
+    gap: 10px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
