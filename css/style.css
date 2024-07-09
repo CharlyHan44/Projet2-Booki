@@ -76,16 +76,16 @@ li {
 }
 
 .logo{
-    width-Hug: 161.09px;
+    width-Hug: 161px;
     height-Hug: 79px;
-    padding: 20px 0px;
+    padding: 20px 0;
     gap: 10px;
     display: flex;
     float: left;
 }
 
 .booki {
-    width: 61.09px;
+    width: 61px;
     height: 19px;
     top: 30px;
     left: 50px;
@@ -142,9 +142,8 @@ li {
 /****** Search-bar ************/
 
 .search-bar {
-    width-hug: 377px;
-    height-hug: 49px;
-    Gap: 24px;
+    width: 377px;
+    height: 49px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px rgba(242, 242, 242, 1);
     border-radius: 15px;
@@ -175,10 +174,11 @@ li {
     width: 147px;
     height: 21px;
     font-size: 18px;
-    line-height: 21.13px;
+    line-height: 21px;
     font-weight: 700;
     text-align: center;
     color: rgba(0, 0, 0, 1);
+    border: none;
 }
 
 .search-button {
@@ -213,7 +213,7 @@ li {
     Height: 21px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21.13px;
+    line-height: 21px;
     color: #000000;
     align-items: center;
 }
@@ -234,7 +234,7 @@ li {
     height: 20px;
     font-size: 17px;
     font-weight: 700;
-    line-height: 19.96px;
+    line-height: 20px;
     text-align: left;
 }
 
@@ -254,7 +254,7 @@ li {
     height: 20px;
     font-size: 17px;
     font-weight: 700;
-    line-height: 19.96px;
+    line-height: 20px;
     text-align: left;
 }
 
@@ -274,7 +274,7 @@ li {
     height: 20px;
     font-size: 17px;
     font-weight: 700;
-    line-height: 19.96px;
+    line-height: 20px;
     text-align: left;
 }
 
@@ -294,11 +294,11 @@ li {
     height: 20px;
     font-size: 17px;
     font-weight: 700;
-    line-height: 19.96px;
+    line-height: 20px;
     text-align: left;
 }
 
-. icones {
+.icones {
     width: 22px;
     height: 22px;
     display: flex;
@@ -306,14 +306,14 @@ li {
 
 .fa-money-bill-wave {
     width: 22px;
-    height: 16.26px;
-    top: 2.87px;
+    height: 16px;
+    top: 3px;
     color: #0065FC;
     display: inline-flex;
 }
 
 .fa-person {
-    width: 13.44px;
+    width: 13px;
     height: 22px;
     left: 4px;
     color: #0065FC;
@@ -322,7 +322,7 @@ li {
 
 .fa-heart {
     width: 22px;
-    height: 18.33px;
+    height: 18px;
     top: 2px;
     color: #0065FC;
     display: inline-flex;
@@ -330,9 +330,9 @@ li {
 
 .fa-fire {
     width: 18px;
-    height: 20.08px;
+    height: 20px;
     top: 1px;
-    left: 2.5px;
+    left: 2px;
     color: #0065FC;
     display: inline-flex;
 }
@@ -342,7 +342,7 @@ li {
     height: 20px;
     font-weight: 700;
     font-size: 17px;
-    line-height: 19.96px;
+    line-height: 20px;
     color: #000000;
 }
 
@@ -397,7 +397,7 @@ li {
     height: 19px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 18.78px;
+    line-height: 19px;
     color: rgba(0, 0, 0, 1);
     display: inline-flex;
 }
@@ -406,7 +406,7 @@ li {
 }
 
 .arrow{
-    width: 26.9px;
+    width: 27px;
     height: 27px;
     top: 208px;
     left: 745px;
@@ -434,25 +434,17 @@ li {
     width: 65%;
 }
 
-.card-hebergement-row1{
+.card-hebergement-row{
     display: flex;
     flex-direction: row;
     width-fill: 811px;
-    height-hug: 207.25px;
-    gap: 30px;
-}
-
-.card-hebergement-row2{
-    display: flex;
-    flex-direction: row;
-    width-fill: 811px;
-    height-hug: 207.25px;
+    height-hug: 207px;
     gap: 30px;
 }
 
 .populaires-cards .card-hebergement{
-    width-Fill: 250.33px;
-    height-Hug: 207.25px;
+    width-fill: 250px;
+    height-Hug: 207px;
     padding: 0 0 15px 0;
     gap: 4px;
     border-radius: 20px;
@@ -460,30 +452,9 @@ li {
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
     margin-top: 33px;
 }
-
-/**
-.populaires-cards .heber-card{
-    width-fill: 250.33px;
-    height-hug: 207.25px;
-    padding: 0 0 15px 0;
-    gap: 4px;
-    border-radius: 20px;
-    display: flex;
-    margin-top: 33px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
-}
-.populaires-cards .hebergement-content {
-    width: 63%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}**/
 
 .populaires-cards .card-hebergement img{
-    width: 250.33px;
+    width: 250px;
     height: 124px;
     gap: 0;
     border-radius: 20px 20px 0 0;
@@ -491,8 +462,8 @@ li {
 }
 
 .heber-content{
-    width-fill: 250.33px;
-    height-hug: 64.25px;
+    width-fill: 250px;
+    height-hug: 64px;
     padding: 0 15px 0 15px;
     gap: 8px;
 }
@@ -506,7 +477,7 @@ li {
 .affichPlus{
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
+    line-height: 21px;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -583,11 +554,11 @@ li {
 
 .card-activités{
     float: left;
-    margin: 1rem;
+    margin: 0 34px 0 0;
 }
 
 .card-activités img{
-    width: 297.5px;
+    width: 298px;
     height: 380px;
     border-radius: 20px 20px 0 0;
 }
@@ -610,7 +581,7 @@ li {
 }
 
 .apropos{
-    width-fill: 446.67px;
+    width-fill: 447px;
     height-fill: 163px;
     padding: 20px;
     gap: 15px;
@@ -622,7 +593,7 @@ li {
     height-hug: 21px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
+    line-height: 21px;
     text-align: left;
 }
 
@@ -631,7 +602,7 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
@@ -642,7 +613,7 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
@@ -653,14 +624,14 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
 }
 
 .nosheber{
-    width-fill: 446.67px;
+    width-fill: 447px;
     height-fill: 163px;
     padding: 20px;
     gap: 15px;
@@ -672,7 +643,7 @@ li {
     height-hug: 21px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
+    line-height: 21px;
     text-align: left;
 }
 
@@ -681,7 +652,7 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
@@ -692,17 +663,15 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
 }
 
 .assist{
-    width-fill: 446.67px;
+    width-fill: 447px;
     height-fill: 163px;
-    padding: 20px 0 0 0;
-    gap: 15px;
     padding: 20px;
     gap: 15px;
     width: 33%;
@@ -713,7 +682,7 @@ li {
     height-hug: 21px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
+    line-height: 21px;
     text-align: left;
 }
 
@@ -722,7 +691,7 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
@@ -733,7 +702,7 @@ li {
     height-hug: 19px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
+    line-height: 19px;
     text-align: left;
     padding: 20px 0 0 0;
     gap: 15px;
@@ -747,7 +716,7 @@ li {
 
     .main-container{
         width-fixed: 1024px;
-        height-hug: 2002.52px;
+        height-hug: 2003px;
         gap: 30px;
         top: 188px;
         left: 475px;
@@ -757,33 +726,32 @@ li {
     .header{
         max-width: 1024px;
         max-height: 79px;
-        padding: 0 0.31px 0 0;
     }
 
     .header nav ul li a{
-        width-hug: 244px;
-        height-hug: 35px;
+        width: 244px;
+        height: 35px;
         gap: 68px;
     }
 
     .booki{
-        width: 61.09px;
+        width: 61px;
         height: 19px;
         top: 30px;
         left: 50px;
     }
 
     header nav ul {
-        width-hug: 344px;
-        height-hug: 35px;
-        left: 679.69px;
+        width: 344px;
+        height: 35px;
+        left: 680px;
         padding: 0 50px;
         gap: 68px;
     }
 
     header nav ul li a{
-        width-hug: 244px;
-        height-hug: 35px;
+        width: 244px;
+        height: 35px;
         gap: 68px;
     }
 
@@ -800,7 +768,7 @@ li {
 
     .body{
         width-fill: 1024px;
-        height-hug: 1893.52px;
+        height-hug: 1894px;
         padding: 0 50px;
         gap: 35px;
     }
@@ -869,7 +837,7 @@ li {
         height: 19px;
         font-size: 16px;
         font-weight: 700;
-        line-height: 18.78px;
+        line-height: 19px;
         text-align: left;
     }
 
@@ -889,7 +857,7 @@ li {
         height: 19px;
         font-size: 16px;
         font-weight: 700;
-        line-height: 18.78px;
+        line-height: 19px;
         text-align: left;
     }
 
@@ -909,7 +877,7 @@ li {
         height: 19px;
         font-size: 16px;
         font-weight: 700;
-        line-height: 18.78px;
+        line-height: 19px;
         text-align: left;
     }
 
@@ -921,7 +889,6 @@ li {
         padding: 4px 19px 4px 19px;
         gap: 10px;
         border-radius: 25px;
-        background: rgba(222, 235, 255, 1);
         border: 2px solid rgba(217, 217, 217, 1);
     }
 
@@ -930,7 +897,7 @@ li {
         height: 19px;
         font-size: 16px;
         font-weight: 700;
-        line-height: 18.78px;
+        line-height: 19px;
         text-align: left;
     }
 
@@ -956,7 +923,7 @@ li {
 
     .hebergements-and-populaires {
         width-fill: 924px;
-        height-hug: 913.5px;
+        height-hug: 914px;
         gap: 50px;
         display: flex;
         flex-direction: column;
@@ -968,7 +935,7 @@ li {
     .hebergements {
         width: 70%;
         width-fill: 924px;
-        height-hug: 611.5px;
+        height-hug: 612px;
         margin-top: 15px;
         padding: 30px;
         gap: 30px;
@@ -980,21 +947,13 @@ li {
         height: 26px;
         font-size: 22px;
         font-weight: 700;
-        line-height: 25.83px;
+        line-height: 26px;
         text-align: left;
     }
 
-    .card-hebergement-row1{
+    .card-hebergement-row{
         width-fill: 864px;
-        height-hug: 207.25px;
-        gap: 30px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .card-hebergement-row2{
-        width-fill: 864px;
-        height-hug: 207.25px;
+        height-hug: 207px;
         gap: 30px;
         display: flex;
         flex-direction: row;
@@ -1008,7 +967,7 @@ li {
 
     .populaires-cards .card-hebergement{
         width-fill: 268px;
-        height-hug: 207.25px;
+        height-hug: 207px;
         padding: 0 0 15px 0;
         gap: 4px;
         border-radius: 20px;
@@ -1024,14 +983,14 @@ li {
 
     .populaires-cards .card-hebergement .card-content{
         width-fill: 268px;
-        height-hug: 64.25px;
+        height-hug: 64px;
         padding: 0 15px;
         gap: 8px;
     }
 
     .heber-content{
         width-fill: 268px;
-        height-hug: 64.25px;
+        height-hug: 64px;
         padding: 0 15px;
         gap: 8px;
     }
@@ -1067,7 +1026,7 @@ li {
     }
 
     .populaires .populaires-title .section-title{
-        width: 300.31px;
+        width: 300px;
         height: 26px;
     }
 
@@ -1081,8 +1040,7 @@ li {
     }
 
     .populaires-cards .card {
-        width: 30%;
-        width: 274.67px;
+        width: 275px;
         height: 146px;
         gap: 15px;
         border-radius: 20px;
@@ -1090,10 +1048,10 @@ li {
     }
 
     .populaires-cards .card img{
-        width: 91.56px;
+        width: 92px;
         height: 146px;
         border-radius: 20px 0 0 20px;
-        border: 5px 0 5px 5px;
+        border: 5px;
     }
 
     .populaires-cards .card-content {
@@ -1117,14 +1075,14 @@ li {
     #activités{
         width: 70%;
         width-fill: 924px;
-        height-hug: 390.02px;
+        height-hug: 390px;
         gap: 30px;
         padding: 30px;
     }
 
     .activités-content .populaires-title .section-title{
         width: 864px;
-        height: 30.02px;
+        height: 30px;
     }
 
     .activités-cards{
@@ -1138,19 +1096,19 @@ li {
     }
 
     .activités-cards .card-activités{
-        width-fill: 193.5px;
+        width-fill: 193px;
         height-hug: 270px;
         border-radius: 20px;
     }
 
     .activités-cards .card-activités img{
-        width: 193.5px;
+        width: 193px;
         height: 200px;
         border-radius: 20px 20px 0 0;
     }
 
     .activités-cards .card-activités .card-content{
-        width-fill: 193.5px;
+        width-fill: 193px;
         height-fixed: 70px;
         padding: 20px 19px 20px 19px;
         gap: 10px;
@@ -1158,7 +1116,7 @@ li {
     }
 
     .activités-cards .card-activités .card-title{
-        width: 155.5px;
+        width: 155px;
         height: 38px;
     }
 
