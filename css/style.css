@@ -212,17 +212,23 @@ li {
     height: 50px;
     gap: 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.filtres {
+    display: inline;
+    flex-direction: row;
 }
 
 .filter-bar h3 {
     width: 54px;
-    Height: 21px;
+    height: 21px;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .filter1 {
@@ -235,16 +241,7 @@ li {
     display: inline;
     background-color: white;
 }
-/**
-.filter1 span{
-    width: 103px;
-    height: 20px;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-}
-**/
+
 .filter2 {
     width-hug: 134px;
     height-fixed: 50px;
@@ -255,16 +252,7 @@ li {
     display: inline;
     background-color: white;
 }
-/**
-.filter2 span{
-    width: 64px;
-    height: 20px;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-}
-**/
+
 .filter3 {
     width-hug: 170px;
     height-fixed: 50px;
@@ -275,16 +263,7 @@ li {
     display: inline;
     background-color: white;
 }
-/**
-.filter3 span{
-    width: 100px;
-    height: 20px;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-}
-**/
+
 .filter4 {
     width-hug: 167px;
     height-fixed: 50px;
@@ -295,16 +274,7 @@ li {
     display: inline;
     background-color: white;
 }
-/**
-.filter4 span{
-    width: 97px;
-    height: 20px;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-}
-**/
+
 .icones {
     width: 22px;
     height: 22px;
@@ -357,15 +327,17 @@ li {
     background-color: #DEEBFF;
 }
 
+.row {
+    display: none;
+}
+
 /******** Info-bar ********************/
 
 .info-bar{
-    width-fill: 1340px;
-    height-fixed: 24px;
     gap: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-bottom: 5em;
 }
 
 .icon {
@@ -393,20 +365,6 @@ li {
     font-size: 20px;
     color: rgba(217, 217, 217, 1);
     text-align: center;
-}
-
-/**.p:before{
-    content: "\0024D8";
-}**/
-
-.info-bar p{
-    width: 1306px;
-    height: 19px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(0, 0, 0, 1);
-    display: inline-flex;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -802,6 +760,8 @@ li {
     .filter-bar h3{
         width: 54px;
         height: 21px;
+        margin: 0;
+        padding: 0;
     }
 
     .filtres {
@@ -810,88 +770,13 @@ li {
         border-radius: 25px;
         border: 2px;
     }
-/**
-    .filter1 {
-        width-hug: 167px;
-        height-fixed: 50px;
-        top: 41px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1)
-    }
 
-    .filter1 span{
-        width: 97px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter2 {
-        width-hug: 131px;
-        height-fixed: 50px;
-        top: 41px;
-        left: 182px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1);
-    }
-
-    .filter2 span{
-        width: 61px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter3 {
-        width-hug: 164px;
-        height-fixed: 50px;
-        top: 41px;
-        left: 328px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1);
-    }
-
-    .filter3 span{
-        width: 94px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter4 {
-        width-hug: 161px;
-        height-fixed: 50px;
-        top: 41px;
-        left: 507px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1);
-    }
-
-    .filter4 span{
-        width: 91px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-**/
     .filter-button:hover {
         background-color: #DEEBFF;
+    }
+
+    .row {
+        display: none;
     }
 
     /******** Info-bar ********************/
@@ -903,7 +788,6 @@ li {
         padding: 15px 0;
         margin-top: 10px;
         display: flex;
-        justify-content: center;
         align-items: start;
     }
 
@@ -1208,10 +1092,10 @@ li {
 
     .info-group{
         width: 375px;
-        height: 432px;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 30px;
     }
 
@@ -1270,131 +1154,59 @@ li {
 
     .filter-bar{
         width: 335px;
-        height: 161px;
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .filter-bar h3{
-        width: 54px;
-        height: 21px;
-    }
-
-    .filtres {
+    .row {
         display: flex;
         flex-direction: row;
     }
 
-/**
-    .filtres {
-        width: 668px;
-        height: 50px;
-        border-radius: 25px 0;
-        border: 2px;
+    .filter-button{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
     }
 
-    .filter1 {
-        width-hug: 167px;
-        height-fixed: 50px;
-        top: 41px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1)
-    }
-
-    .filter1 span{
-        width: 97px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter2 {
-        width-hug: 131px;
-        height-fixed: 50px;
-        top: 41px;
-        left: 182px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1);
-    }
-
-    .filter2 span{
-        width: 61px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter3 {
-        width-hug: 164px;
-        height-fixed: 50px;
-        top: 41px;
-        left: 328px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1);
-    }
-
-    .filter3 span{
-        width: 94px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter4 {
-        width-hug: 161px;
-        height-fixed: 50px;
-        top: 41px;
-        left: 507px;
-        padding: 4px 19px 4px 19px;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid rgba(217, 217, 217, 1);
-    }
-
-    .filter4 span{
-        width: 91px;
-        height: 19px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: left;
-    }
-
-    .filter-button:hover {
-        background-color: #DEEBFF;
-    }
-**/
-    /******** Info-bar ********************/
-/**
-    .info-bar{
-        width-fill: 924px;
-        height-hug: 24px;
-        gap: 10px;
-        padding: 15px 0;
-        margin-top: 10px;
+    .icones {
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: center;
     }
-**/
+
+    .row button {
+        margin-right: 10px;
+    }
+
+    .row button span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filtres {
+        display: none;
+    }
+
+    /******** Info-bar ********************/
+
+    .info-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5em;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     /********* HEBERGEMENTS ET POPULAIRES **********/
 
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
+        padding-top: 20px;
     }
 
     /********** HEBERGEMENTS ***************/
