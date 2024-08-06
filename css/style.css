@@ -1036,8 +1036,6 @@ li {
     .main-container{
         width: 375px;
         height: auto;
-        justify-content: center;
-        align-items: center;
     }
 
     .header nav {
@@ -1045,8 +1043,6 @@ li {
         height: 115px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .logo{
@@ -1058,10 +1054,6 @@ li {
     }
 
     .menu {
-        width: 165%;
-        display: flex;
-        justify-content: space-between;
-        box-sizing: border-box;
         gap: 0;
     }
 
@@ -1078,7 +1070,12 @@ li {
     .activity {
         display: flex;
         box-sizing: border-box;
+        justify-content: center;
         align-items: center;
+        border-bottom: rgba(242, 242, 242, 1) 2px solid;
+        padding-bottom: 20px;
+        border-top: none;
+        margin-top: 5px;
     }
 
     /****** Body **********/
