@@ -1034,13 +1034,15 @@ li {
     /****** Header ********/
 
     .main-container{
-        width-fixed: 768px;
+        width-fixed: 768px !important;
         height: auto;
     }
 
     .header nav {
-        width: 375px;
+        width: 368px !important;
         height: 115px;
+        justify-content: center;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
     }
@@ -1050,34 +1052,40 @@ li {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 30px 40px 0 0;
+        padding: 30px 50px 0 0;
     }
 
     .menu {
-        gap: 0;
-        margin: 0;
-        padding: 0;
+        gap: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .house {
+        width: 130px !important;
         display: flex;
         box-sizing: border-box;
         justify-content: center;
+        align-content: flex-start;
         align-items: center;
         border-bottom: #0056b3 2px solid;
         border-top: none;
-        padding-bottom: 20px;
+        padding-bottom: 18px !important;
+        gap: 0 !important;
+        margin: 0 !important;
     }
 
     .activity {
+        width: 130px !important;
         display: flex;
-        box-sizing: border-box;
         justify-content: center;
+        align-content: flex-start;
         align-items: center;
         border-bottom: rgba(242, 242, 242, 1) 2px solid;
-        padding-bottom: 20px;
+        padding: 0 !important;
         border-top: none;
-        margin-top: 5px;
+        margin: 0 !important;
+        gap: 0 !important;
     }
 
     /****** Body **********/
